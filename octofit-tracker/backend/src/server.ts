@@ -4,6 +4,7 @@ import { Activity, LeaderboardEntry, Team, User, Workout } from './models/index.
 
 const app = express();
 const PORT = Number(process.env.PORT) || 8000;
+// Verify the environment variables
 const codespaceName = process.env.CODESPACE_NAME;
 const apiBaseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
