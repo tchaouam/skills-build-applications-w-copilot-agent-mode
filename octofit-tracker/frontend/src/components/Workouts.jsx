@@ -4,10 +4,10 @@ const getApiBaseUrl = () => {
   const codespaceName = import.meta.env.VITE_CODESPACE_NAME;
 
   if (codespaceName && codespaceName.trim() !== '') {
-    return `https://${codespaceName}-8000.app.github.dev`;
+    return `https://${codespaceName}-8000.app.github.dev/api/workouts/`;
   }
 
-  return 'http://localhost:8000';
+  return 'http://localhost:8000/api/workouts/';
 };
 
 const getDataArray = (payload) => {
@@ -33,8 +33,8 @@ function Workouts() {
 
   useEffect(() => {
     const apiBaseUrl = getApiBaseUrl();
-// Fetch workouts from the API
-    fetch(`${apiBaseUrl}/api/workouts/`)
+
+    fetch(apiBaseUrl)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
