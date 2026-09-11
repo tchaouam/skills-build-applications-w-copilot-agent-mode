@@ -34,7 +34,8 @@ function Activities() {
   useEffect(() => {
     const apiBaseUrl = getApiBaseUrl();
 // Fetch activities from the API
-    fetch(`${apiBaseUrl}/api/activities/`)
+//    fetch(`${apiBaseUrl}/api/activities/`)
+    fetch(`/api/activities/`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
