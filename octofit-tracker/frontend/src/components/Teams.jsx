@@ -33,7 +33,7 @@ function Teams() {
 
   useEffect(() => {
     const apiBaseUrl = getApiBaseUrl();
-
+// Fetch teams from the API
     fetch(`${apiBaseUrl}/api/teams/`)
       .then((response) => {
         if (!response.ok) {

@@ -33,7 +33,7 @@ function Activities() {
 
   useEffect(() => {
     const apiBaseUrl = getApiBaseUrl();
-
+// Fetch activities from the API
     fetch(`${apiBaseUrl}/api/activities/`)
       .then((response) => {
         if (!response.ok) {

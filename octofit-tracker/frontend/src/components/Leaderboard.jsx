@@ -33,7 +33,7 @@ function Leaderboard() {
 
   useEffect(() => {
     const apiBaseUrl = getApiBaseUrl();
-
+// Fetch leaderboard data from the API
     fetch(`${apiBaseUrl}/api/leaderboard/`)
       .then((response) => {
         if (!response.ok) {

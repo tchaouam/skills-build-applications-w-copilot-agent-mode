@@ -33,7 +33,7 @@ function Users() {
 
   useEffect(() => {
     const apiBaseUrl = getApiBaseUrl();
-
+// Fetch users from the API
     fetch(`${apiBaseUrl}/api/users/`)
       .then((response) => {
         if (!response.ok) {

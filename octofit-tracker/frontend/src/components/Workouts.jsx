@@ -33,7 +33,7 @@ function Workouts() {
 
   useEffect(() => {
     const apiBaseUrl = getApiBaseUrl();
-
+// Fetch workouts from the API
     fetch(`${apiBaseUrl}/api/workouts/`)
       .then((response) => {
         if (!response.ok) {
