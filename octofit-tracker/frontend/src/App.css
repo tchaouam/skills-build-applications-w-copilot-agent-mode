@@ -1,0 +1,39 @@
+.app-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #fff;
+}
+
+.card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.table thead th {
+  background: #eef2ff;
+  color: #1e293b;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.alert {
+  border-radius: 0.9rem;
+}
+
