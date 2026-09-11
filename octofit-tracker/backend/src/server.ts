@@ -1,0 +1,1 @@
+import express from "express"; const app = express(); const PORT = Number(process.env.PORT) || 8000; app.get("/api/health", (_req, res) => { res.json({ status: "ok" }); }); app.listen(PORT, () => { console.log(`Octofit API listening on port ${PORT}`); });
